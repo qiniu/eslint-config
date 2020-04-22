@@ -1,4 +1,4 @@
-# eslint-config
+# @qiniu/eslint-config
 
 ESLint config for Qiniu.
 
