@@ -6,6 +6,7 @@ ESLint config for Qiniu.
 
 ```shell
 npm i --save-dev @qiniu/eslint-config
+npx install-peerdeps --dev eslint-config-airbnb
 ```
 
 ### Usage
