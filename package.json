@@ -1,0 +1,31 @@
+{
+  "name": "@qiniu/eslint-config",
+  "version": "0.0.1",
+  "description": "ESLint config for Qiniu",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiniu/eslint-config.git"
+  },
+  "keywords": [
+    "qiniu",
+    "eslint",
+    "config"
+  ],
+  "author": "nighca@live.cn",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.5.1"
+  },
+  "bugs": {
+    "url": "https://github.com/qiniu/eslint-config/issues"
+  },
+  "homepage": "https://github.com/qiniu/eslint-config#readme"
+}
