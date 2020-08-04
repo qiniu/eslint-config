@@ -9,7 +9,7 @@ module.exports = {
   },
   rules: {
     "import/order": ["error", {
-      "groups": ["builtin", "external", ["internal", "parent", "sibling"], "unknown"],
+      "groups": ["builtin", "external", ["internal", "parent", "sibling", "index"], "unknown"],
       "newlines-between": "always",
       "pathGroups": [
         {
