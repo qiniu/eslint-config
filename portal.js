@@ -13,10 +13,6 @@ module.exports = {
       "newlines-between": "always",
       "pathGroups": [
         {
-          "pattern": "src/**",
-          "group": "internal"
-        },
-        {
           "pattern": "./*.+(less|png|svg|jpg|jpeg|webm|gif)",
           "group": "unknown"
         },
