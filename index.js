@@ -41,7 +41,10 @@ module.exports = {
     },
     "linkComponents": [
       { "name": "Link", "linkAttribute": "to" }
-    ]
+    ],
+    "import/resolver": {
+      typescript: {}
+    }
   },
   rules: {
     "semi": ["error", "never"],
@@ -92,6 +95,10 @@ module.exports = {
     // -> https://github.com/benmosher/eslint-plugin-import/issues/1453
     "import/no-cycle": "off",
     "import/named": "off",
+    "import/order": ["error", {
+      "groups": ["builtin", "external", ["internal", "parent", "sibling", "index"]],
+      "newlines-between": "always"
+    }],
 
     "react/jsx-wrap-multilines": ["error",
       {
