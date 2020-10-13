@@ -97,7 +97,7 @@ module.exports = {
     "import/named": "off",
     "import/order": ["error", {
       "groups": ["builtin", "external", ["internal", "parent", "sibling", "index"]],
-      "newlines-between": "always"
+      "newlines-between": "always-and-inside-groups"
     }],
 
     "react/jsx-wrap-multilines": ["error",
