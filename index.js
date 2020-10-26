@@ -50,11 +50,13 @@ module.exports = {
     "semi": ["error", "never"],
     "eol-last": ["error", "always"],
     "comma-dangle": ["error", "never"],
+    "camelcase": "off", // 使用 @typescript-eslint/naming-convention 代替
     "max-classes-per-file": "off",
     "max-len": ["error", 120, { "ignoreUrls": true, "ignoreStrings": true, "ignoreTemplateLiterals": true, "ignoreRegExpLiterals": true }],
     "func-names": ["error", "as-needed"],
     "multiline-ternary": ["error", "always-multiline"],
     "no-mixed-operators": "off",
+    "no-shadow": "off", // 使用 @typescript-eslint/no-shadow 代替
     "arrow-parens": ["error", "as-needed"],
     "arrow-body-style": ["error", "as-needed"],
     "space-before-function-paren": ["error", {
@@ -81,6 +83,7 @@ module.exports = {
     "no-multi-spaces": ["error", { ignoreEOLComments: true }],
     "no-nested-ternary": "warn",
     "no-continue": "off",
+    "no-use-before-define": "off", // 使用 @typescript-eslint/no-use-before-define 代替
 
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": "off",
@@ -148,23 +151,68 @@ module.exports = {
       // "FunctionDeclaration": {"body": 1, "parameters": 0}
     }],
 
-    "@typescript-eslint/camelcase": "off",
+    // 命名规范
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: 'default',
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE', "PascalCase"],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
+        selector: 'parameter',
+        format: ['camelCase', "PascalCase"],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
+        selector: 'function',
+        format: ['camelCase', 'PascalCase'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
+        selector: 'class',
+        format: ['PascalCase'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
+        selector: 'typeLike',
+        format: ['PascalCase'],
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
+      {
+        selector: 'enumMember',
+        format: ['PascalCase'],
+      },
+    ],
+
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-non-null-assertion": "off", // allow foo.bar!.fn()
     "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false, "typedefs": false }],
     "@typescript-eslint/member-delimiter-style": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-empty-interface": "off",
-    "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
-    "@typescript-eslint/class-name-casing": ["error", { "allowUnderscorePrefix": true }], // class name 中允许出现 _Xxx 这样的
 
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "ignoreRestSiblings": true }],
+    "@typescript-eslint/no-unused-vars": "off", // TS 本身会检查 declared but never used (noUnusedLocals, noUnusedParameters)
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-useless-constructor.md#rule-changes
     "no-useless-constructor": "off",
-    "@typescript-eslint/no-useless-constructor": "error"
+    "@typescript-eslint/no-useless-constructor": "error",
+    "@typescript-eslint/no-shadow": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off", // 先关掉方便升级，后续看情况打开
+    "@typescript-eslint/ban-types": "off", // 先关掉方便升级，后续看情况打开
   },
   "overrides": [{
     "files": ["*.spec.ts", "*.spec.tsx"],
