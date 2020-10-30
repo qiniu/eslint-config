@@ -166,6 +166,16 @@ module.exports = {
         leadingUnderscore: 'allow',
         trailingUnderscore: 'allow',
       },
+      // 对 property 命名暂不做检查，考虑如下的场景在代码中可能会有不少
+      // headers: {
+      //   'Content-Type': ...
+      // }
+      {
+        selector: 'property',
+        format: null,
+        leadingUnderscore: 'allow',
+        trailingUnderscore: 'allow',
+      },
       {
         selector: 'parameter',
         format: ['camelCase', "PascalCase"],
