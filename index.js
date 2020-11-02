@@ -81,6 +81,7 @@ module.exports = {
     "no-multi-spaces": ["error", { ignoreEOLComments: true }],
     "no-nested-ternary": "warn",
     "no-continue": "off",
+    "no-use-before-define": "off",
 
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": "off",
@@ -157,7 +158,7 @@ module.exports = {
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
-    "@typescript-eslint/class-name-casing": ["error", { "allowUnderscorePrefix": true }], // class name 中允许出现 _Xxx 这样的
+    "@typescript-eslint/explicit-module-boundary-types": "off",
 
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "ignoreRestSiblings": true }],
