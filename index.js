@@ -63,6 +63,7 @@ module.exports = {
       "named": "never"
     }],
     "consistent-return": "off",
+    "camelcase": "off",
     "no-param-reassign": "off",
     "prefer-template": "off",
     "prefer-promise-reject-errors": "off",
@@ -82,6 +83,7 @@ module.exports = {
     "no-nested-ternary": "warn",
     "no-continue": "off",
     "no-use-before-define": "off",
+    "no-shadow": "off", // 会误报，比如 enum，禁用掉，开启 @typescript-eslint/no-shadow 即可
 
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": "off",
@@ -149,7 +151,6 @@ module.exports = {
       // "FunctionDeclaration": {"body": 1, "parameters": 0}
     }],
 
-    "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-non-null-assertion": "off", // allow foo.bar!.fn()
     "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false, "typedefs": false }],
@@ -165,7 +166,8 @@ module.exports = {
 
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-useless-constructor.md#rule-changes
     "no-useless-constructor": "off",
-    "@typescript-eslint/no-useless-constructor": "error"
+    "@typescript-eslint/no-useless-constructor": "error",
+    "@typescript-eslint/no-shadow": ["error"]
   },
   "overrides": [{
     "files": ["*.spec.ts", "*.spec.tsx"],
