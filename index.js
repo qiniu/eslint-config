@@ -84,6 +84,7 @@ module.exports = {
     "no-nested-ternary": "warn",
     "no-continue": "off",
     "no-use-before-define": "off", // 使用 @typescript-eslint/no-use-before-define 代替
+    "no-unused-expressions": "off",
 
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": "off",
@@ -135,6 +136,7 @@ module.exports = {
     "react/no-array-index-key": "off",
     "react/prefer-stateless-function": "warn",
     "react/jsx-no-target-blank": ["error", { "allowReferrer": true }],
+    "react/require-default-props": "off",
 
     "react-hooks/exhaustive-deps": "warn",
 
