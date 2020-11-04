@@ -84,7 +84,6 @@ module.exports = {
     "no-nested-ternary": "warn",
     "no-continue": "off",
     "no-use-before-define": "off", // 使用 @typescript-eslint/no-use-before-define 代替
-    "no-unused-expressions": "off",
 
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": "off",
@@ -215,6 +214,10 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
+
+    "no-unused-expressions": "off",
+    // 在 base 的基础上支持 `x?.()` 写法
+    "@typescript-eslint/no-unused-expressions": ["error"],
 
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "off", // TS 本身会检查 declared but never used (noUnusedLocals, noUnusedParameters)
