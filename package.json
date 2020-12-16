@@ -1,6 +1,6 @@
 {
   "name": "@qiniu/eslint-config",
-  "version": "0.0.6-beta.6",
+  "version": "0.0.6-beta.7",
   "description": "ESLint config for Qiniu",
   "main": "index.js",
   "scripts": {},
@@ -16,11 +16,11 @@
   "author": "nighca@live.cn",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/parser": "~4.5.0",
+    "@typescript-eslint/parser": "~4.10.0",
     "eslint-config-airbnb": "~18.2.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "~4.5.0",
+    "@typescript-eslint/eslint-plugin": "~4.10.0",
     "eslint": "~7.2.0",
     "eslint-import-resolver-typescript": "~2.3.0",
     "eslint-plugin-import": "~2.22.1",
