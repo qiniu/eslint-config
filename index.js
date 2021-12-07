@@ -88,6 +88,7 @@ module.exports = {
     "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": "off",
     "import/no-named-as-default-member": "off",
+    "import/no-unresolved": 0,
     "import/extensions": ["error", "ignorePackages", {
       "js": "never",
       "jsx": "never",
