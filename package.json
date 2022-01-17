@@ -1,6 +1,6 @@
 {
   "name": "@qiniu/eslint-config",
-  "version": "0.0.6-beta.8",
+  "version": "0.0.6-beta.9",
   "description": "ESLint config for Qiniu",
   "main": "index.js",
   "scripts": {},
@@ -16,17 +16,17 @@
   "author": "nighca@live.cn",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/parser": "~4.10.0",
-    "eslint-config-airbnb": "~18.2.0"
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint-config-airbnb": "^18.2.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "~4.10.0",
-    "eslint": "~7.2.0",
-    "eslint-import-resolver-typescript": "~2.3.0",
-    "eslint-plugin-import": "~2.22.1",
-    "eslint-plugin-jsx-a11y": "~6.3.0",
-    "eslint-plugin-react": "~7.20.0",
-    "eslint-plugin-react-hooks": "~4.2.0"
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "eslint": "^7.2.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
   },
   "bugs": {
     "url": "https://github.com/qiniu/eslint-config/issues"
